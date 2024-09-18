@@ -1,1 +1,23 @@
-
+strng = "Thejas 5 govinda 8 ptr 6 kabakacars 4"
+words = [s for s in strng.split() if s.isalpha()]
+numbers = [int(s) for s in stri if s.isdigit()]
+print(words)
+print(numbers)
+dict = {}
+Total = 0 
+count_even = 0
+count_odd = 0
+for i in words:
+  if len(i)%2 ==0:
+    count_even+=1
+  else:
+    count_odd+=1
+print(f"even word count :{count_even}")
+print(f"odd word count :{count_odd}")
+for s in numbers:
+  Total = Total+s
+Average = Total/len(numbers)
+print(f"sum_numbers :{Total}")
+print(f"average_numbers :{Average}")
+dict.update({'words' :words, 'numbers': numbers, 'even_word_count': count_even, 'odd_word_count': count_odd, 'Sum_numbers': Total, ' Average_numbers': Average })
+print(dict)
