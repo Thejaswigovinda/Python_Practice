@@ -5,5 +5,5 @@ def even_num(list):
       new_list.append(num)
   print(new_list)
 
-my_list = [2,5,3,6,7,8]
-even_list(my_list)
+my_lists = [2,5,3,6,7,8]
+even_num(my_lists)
